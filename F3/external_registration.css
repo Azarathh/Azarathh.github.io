@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+    url('https://th.bing.com/th/id/R.58c0782f806a40e31234f7eee0999b22?rik=CgOYjKeopS2Xyw&riu=http%3a%2f%2fmedia.interaksyon.com%2fwp-content%2fuploads%2f2017%2f11%2fTrudeau_Jollibee_Tondo_lost_in_groupfie_11122017.jpg&ehk=6ZzAz7iR%2bIiLswPpxI1i6nvHr0Ax2S3A2G%2fBnKkzSWo%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
+        background-size: cover;
+}
+.container {
+    background: #ffff;
+    max-width: 800px;
+    margin: 60px auto;
+    height: 875px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+.header {
+    text-align: center;
+}
+.header h1 {
+    margin-bottom: 10px;
+}
+.header h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+.img-area {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 25px auto;
+}
+.img-area img {
+    width: 100%;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left {
+    flex: 1;
+    padding: 30px;
+}
+.left p {
+    line-height: 2;
+}
+.left ul li {
+    line-height: 2;
+}
+h2 {
+    background: #e0163d;
+    padding: 15px;
+    color: #ffff;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+}
+.right {
+    flex: 1;
+    padding: 30px;
+}
+.right h3 {
+    margin-bottom: 15px;
+}
+.right p {
+    line-height: 2.9;
+}
+.right ul li {
+    line-height: 2;
+}
+
+.form-container{
+margin: auto;
+width: 40%;
+border: 2px solid black;
+border-radius: 5px;
+padding: 0px 10px 15px 10px;
+}
+
+input[type="text"]{
+width: 100%;
+margin: 5px;
+}
+
+button[type="submit"]{
+border: none;
+border-radius: 3px;
+padding: 5px;
+color: white;
+background-color: green;
+}
+
+button[type="submit"]:hover{
+    background-color: #231f20;
+}
+
+button[type="reset"]{
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+}
+
+
+button[type="reset"]:hover{
+    background-color: #231f20;
+}
+
+button[type="cancel"]{
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    background-color: #e0163d;
+}
+
+
+button[type="cancel"]:hover{
+    background-color: #231f20;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 95%;
+        height: auto;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+    .left, .right {
+        flex: none;
+        width: 100%;
+    }
+    .container {
+        width: 95%;
+        height: auto;
+    }
+    h2 {
+        font-size: 15px;
+    }
+}
