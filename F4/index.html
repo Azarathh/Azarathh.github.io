@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Formative 4: Employee Registration Form Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5 bg-white p-4">
+        <div class="jumbotron text-center" style="background-image: url('https://i.pinimg.com/originals/bd/cc/10/bdcc106ff17d8dfe6732765a3e674ee9.png'); background-size: cover; background-color: rgba(0, 0, 0, 0);">
+            <img id="logo-image" class="img-fluid shadow-xl" alt="Logo" src="https://vectorlogo4u.com/wp-content/uploads/2020/12/Jollibee-Logo-Vector-01-2048x967.png" style="height: 200px;" />
+            <h2 class="text-white mt-3 shadow-xl">Employee Registration Form</h2>
+        </div>
+    
+        <form class="row g-3">
+            <!-- Personal Information -->
+            <div class="col-12">
+                <h3 class="bg-danger text-white p-2 rounded">Personal Information</h3>
+            </div>
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-3">
+                <label for="inputAge" class="form-label">Age</label>
+                <input type="number" class="form-control" id="inputAge">
+            </div>
+            <div class="col-md-3">
+                <label for="inputDob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="inputDob">
+            </div>
+            <div class="col-md-6">
+                <label for="inputReligion" class="form-label">Religion</label>
+                <input type="text" class="form-control" id="inputReligion">
+            </div>
+            <div class="col-md-6">
+                <label for="inputHoroscope" class="form-label">Horoscope Details</label>
+                <input type="text" class="form-control" id="inputHoroscope">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCaste" class="form-label">Caste</label>
+                <input type="text" class="form-control" id="inputCaste">
+            </div>
+            <div class="col-md-3">
+                <label for="inputHeight" class="form-label">Height</label>
+                <input type="text" class="form-control" id="inputHeight">
+            </div>
+            <div class="col-md-3">
+                <label for="inputWeight" class="form-label">Weight</label>
+                <input type="text" class="form-control" id="inputWeight">
+            </div>
+            <div class="col-md-6">
+                <label for="inputHairColor" class="form-label">Hair Color</label>
+                <input type="text" class="form-control" id="inputHairColor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEyeColor" class="form-label">Eye Color</label>
+                <input type="text" class="form-control" id="inputEyeColor">
+            </div>
+    
+            <!-- Family Details -->
+            <div class="col-12 mt-4">
+                <h3 class="bg-danger text-white p-2 rounded">Family Details</h3>
+            </div>
+            <div class="col-md-6">
+                <label for="inputFamilyMembers" class="form-label">Number of Family Members</label>
+                <input type="number" class="form-control" id="inputFamilyMembers">
+            </div>
+            <div class="col-12">
+                <label for="inputFamilyInfo" class="form-label">Names and Professions of Family Members</label>
+                <textarea class="form-control" id="inputFamilyInfo" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <label for="inputSocialClass" class="form-label">Social Class and Family Values</label>
+                <textarea class="form-control" id="inputSocialClass" rows="2"></textarea>
+            </div>
+    
+            <!-- Educational Qualifications -->
+            <div class="col-12 mt-4">
+                <h3 class="bg-danger text-white p-2 rounded">Educational Qualifications</h3>
+            </div>
+            <div class="col-md-6">
+                <label for="inputDegree" class="form-label">Highest Degree</label>
+                <input type="text" class="form-control" id="inputDegree">
+            </div>
+            <div class="col-md-6">
+                <label for="inputInstitution" class="form-label">Institution</label>
+                <input type="text" class="form-control" id="inputInstitution">
+            </div>
+            <div class="col-md-4">
+                <label for="inputGradYear" class="form-label">Year of Graduation</label>
+                <input type="text" class="form-control" id="inputGradYear">
+            </div>
+            <div class="col-12">
+                <label for="inputCertifications" class="form-label">Certifications and Additional Qualifications</label>
+                <textarea class="form-control" id="inputCertifications" rows="3"></textarea>
+            </div>
+    
+            <!-- Work Experience -->
+            <div class="col-12 mt-4">
+                <h3 class="bg-danger text-white p-2 rounded">Work Experience</h3>
+            </div>
+            <div class="col-md-6">
+                <label for="inputCompany" class="form-label">Most Recent Company</label>
+                <input type="text" class="form-control" id="inputCompany">
+            </div>
+            <div class="col-md-6">
+                <label for="inputJobTitle" class="form-label">Job Title</label>
+                <input type="text" class="form-control" id="inputJobTitle">
+            </div>
+            <div class="col-12">
+                <label for="inputExperience" class="form-label">Years of Experience</label>
+                <input type="text" class="form-control" id="inputExperience">
+            </div>
+        
+            <!-- Submit Button -->
+      <div class="col-12 mt-4">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+           
+</body>
+</html>
