@@ -18,16 +18,55 @@ body {
     max-width: 600px;
     padding: 20px;
     margin: 20px 0;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .profile-img img,
 .details-right img {
     border-radius: 50%;
+    animation: zoomIn 0.5s ease forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .favorites .favorite-item,
 .pictures .picture-item {
     margin-bottom: 15px;
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .back-button button {
@@ -41,11 +80,12 @@ body {
     font-size: 1em;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
-
 
 .back-button button:hover {
     background-color: #145293;
+    transform: scale(1.1);
 }
 
 @media (min-width: 576px) {
