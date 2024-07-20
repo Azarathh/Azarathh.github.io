@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEU Login Page</title>
+    <link rel="icon" type="image/png"
+        href="https://global-uploads.webflow.com/59407b2361ef303725423a3f/5ab034e067150a4c3d1b699d_64da4da88837efa7e21989079889f464_icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
@@ -134,6 +136,25 @@
             transform: scale(1.1);
         }
 
+        .mcs {
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+        }
+
+        .mcs a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .mcs:hover {
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+        .footerlink:hover {
+            text-decoration: none !important;
+        }
+
         @media (max-width: 768px) {
             .login-btn {
                 max-width: 100%;
@@ -146,12 +167,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 mb-3">
-                <img class="FEU-logo img-fluid"
-                    src="assets/feulogo.png"
-                    alt="FEU-logo">
+                <img class="FEU-logo img-fluid" src="assets/feulogo.png" alt="FEU-logo">
             </div>
             <div class="col-md-6 mb-3 text-md-end">
-                <p class="browse"><a href="#" style="color:white;">Browse courses</a></p>
+                <p class="browse"><a href="https://feu.instructure.com/search/all_courses" style="color:white;">Browse
+                        courses</a></p>
             </div>
             <div class="col-12 mb-3">
                 <form id="login-form">
@@ -178,8 +198,14 @@
             </form>
             <div class="col-12 mb-3 text-start">
                 <div class="microsoft">
-                    <img src="assets/mc.png" alt="Microsoft Logo">
-                    <p>Log in with Microsoft</p>
+                    <div class="mcs"><img src="assets/mc.png" alt="Microsoft Logo">
+
+                        <a
+                            href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=service%3A%3Aaccount.microsoft.com%3A%3AMBI_SSL%20openid%20profile%20offline_access&response_type=code&client_id=81feaced-5ddd-41e7-8bef-3e20a2689bb7&redirect_uri=https%3A%2F%2Faccount.microsoft.com%2Fauth%2Fcomplete-signin-oauth&client-request-id=5e8d8c5d-d555-4e1d-86d4-7595cd3cd94c&x-client-SKU=MSAL.Desktop&x-client-Ver=4.61.3.0&x-client-OS=Windows%20Server%202019%20Datacenter&prompt=login&client_info=1&state=H4sIAAAAAAAEAAXBR5aCMAAA0LvMlgVESsjCBUThQUCaNHejECmhSRs5_fz_80gb8PFaU1lnEA4qIzAjuOg77Dn2RRdI2WLheJWxo3M1kTxs2LTzULAm9x6Nesfw8r1TEdD7FqclcWNXHqN15_38ahdDSORejYNg7gXR_SOczYHHDuJfRaTBKUrqSUvcUbxK3WuSzDyp5ZlN1aiJ6sqXb9hWaFk680b1CPli8rUUvhmRemPwcNXxg-3Vmn3Sclx5LZ-5Ri9BvE1oBE7EuhJGXyUW_KY1heyAm6GtEl8BrMOSNJ6vawfClKtrQ7Wp9dlGlKLJCy2-GIJ0G_xB1lzO9FmbvXuwot2osLIrF31iE3RhIdTsWSgh2NHJkHLHLJjYGu8mo49AmhcYaufzzz8Hg0J4WgEAAA&msaoauth2=true&lc=1033&ru=https%3A%2F%2Faccount.microsoft.com%2Fprofile%2Fsignin">
+                            <p>Log in with Microsoft</p>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -191,16 +217,21 @@
                 <div class="col-md-12">
                     <div class="footer-links text-center text-md-start">
                         <p class="footerlink"><a href="#">Help</a></p>
-                        <p class="footerlink"><a href="#">Privacy Policy</a></p>
+                        <p class="footerlink"><a
+                                href="https://www.instructure.com/policies/product-privacy-policy">Privacy Policy</a>
+                        </p>
                         <p class="footerlink"><a href="#">Acceptable Use Policy</a></p>
-                        <p><a href="#">Facebook</a></p>
-                        <p><a href="#">Twitter</a></p>
+                        <p class="footerlink"><a href="https://www.facebook.com/Instructure/">Facebook</a></p>
+                        <p class="footerlink"><a
+                                href="https://twitter.com/x/migrate?tok=7b2265223a222f696e737472756374757265222c2274223a313732313433393633307d487fcc3446d4b798ceb4f9dffb835dd2">Twitter</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="instructure text-center text-md-end">
-                        <img src="assets/instructure.png"
-                            alt="Instructure Logo">
+                        <a class="mcs" href="https://www.instructure.com/"><img src="assets/instructure.png"
+                                alt="Instructure Logo"></a>
+
                     </div>
                 </div>
             </div>
